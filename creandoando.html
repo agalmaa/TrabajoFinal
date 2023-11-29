@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Alquimia </title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtener el párrafo de "Quienes somos"
+            var quienesSomosParagraph = document.getElementById("quienes-somos-paragraph");
+
+            // Ocultar el párrafo inicialmente
+            quienesSomosParagraph.style.display = "none";
+
+            // Obtener el enlace del menú "Quienes somos"
+            var quienesSomosLink = document.getElementById("quienes-somos-link");
+
+            // Agregar un evento de clic al enlace del menú
+            quienesSomosLink.addEventListener("click", function (event) {
+                // Evitar que el enlace lleve a otra página
+                event.preventDefault();
+
+                // Mostrar u ocultar el párrafo al hacer clic en el enlace
+                if (quienesSomosParagraph.style.display === "none") {
+                    quienesSomosParagraph.style.display = "block";
+                } else {
+                    quienesSomosParagraph.style.display = "none";
+                }
+            });
+        });
+    </script>
+<body>
+      <header>
+        <div class="logotipo">
+            <img src="https://i.pinimg.com/736x/86/d0/9f/86d09fe270c8fa6b7d8eabc38b64739e.jpg" width="160" height="160">
+        </div>
+        <h1>Alquimia</h1>
+        <p>Descubre la última moda de Barbie para todas las temporadas.</p>
+    </header>
+    </Div>
+    <div class="menu">
+    <!-- Menú de navegación -->
+<<nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a id="quienes-somos-link" href="#">Quienes somos</a></li>
+        <li class="dropdown">
+            <a href="#">Estilos</a>
+            <ul class="dropdown-content">
+                <li><a href="#estilo-ejecutiva">Estilo Ejecutiva</a></li>
+                <li><a href="#estilo-gala">Estilo Gala</a></li>
+                <li><a href="#estilo-fiesta-informal">Estilo Fiesta Informal</a></li>
+            </ul>
+        </li>
+        <li><a href="#accesorios">Accesorios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+        <p id="quienes-somos-paragraph">Alquimia es una distinguida tienda en línea especializada en la venta de ropa
+            de mujer. Con una trayectoria de una década a nivel mundial, nos hemos consolidado como líderes en ofrecer
+            una exclusiva selección de prendas en una amplia gama de tonalidades de rosa. Nuestra dedicación a la moda
+            femenina se refleja en cada prenda que ofrecemos, fusionando estilo y elegancia de manera única.</p> 
+ <div class="contenedor-de-imagenes" id="estilos">
+    <p class="barbie"></p>
+    <hr>
+    <section id="estilo-ejecutiva">
+        <h2> Estilo Ejecutiva </h2>
+    <h3> Temporada invierno </h3> 
+    <div class="contenedor-imagen">
+    <img src="https://i.pinimg.com/564x/5b/3a/d1/5b3ad1010bb4293b3ebb8e6dbfe6f66a.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/ac/c7/c7/acc7c7ef9255b9d624e914aaeb3639d6.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/53/4e/29/534e294d2bd1e2ff3300efd34379fd24.jpg" width="" height="400px" >
+    <br>
+    <img src="https://i.pinimg.com/564x/29/1c/76/291c76bff5d320115f46ef31ae68f710.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/9e/59/9d/9e599d01bfd4c7d54c21d71723e99117.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/92/57/24/925724e96637f568a0e9b52bc711f4bb.jpg" width="" height="400px" >
+    <br>
+    <hr>
+    <h2> Verano </h2>
+    <img src="https://i.pinimg.com/564x/ef/a8/48/efa84802c405a2731421b94ee777c5ea.jpg"  width="" height="400px">
+    <img src="https://i.pinimg.com/564x/f7/bd/ac/f7bdacb5ded4bfa312663623bb563db5.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/7e/91/c0/7e91c0d3c9c2db6c40ce6ba5e6aed834.jpg" width="" height="400px" >
+    <br>
+    <img src="https://i.pinimg.com/564x/0e/73/91/0e7391bbaf7e3b948c40b4bd56e55eb9.jpg"  width="" height="400px">
+    <img src="https://i.pinimg.com/564x/71/37/37/713737e5104690b50d068d60ca4113cc.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/13/0f/1d/130f1da9c869e97930b24ad9bb9f0d2a.jpg" width="" height="400px" >
+    <br>
+    <img src="https://i.pinimg.com/564x/c1/e2/54/c1e254addec8f2ac3239c4ca9626347f.jpg"  width="" height="400px">
+    <img src="https://i.pinimg.com/564x/4a/3d/87/4a3d8758a3c785834b402f83fa82a258.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/bc/04/67/bc046790687b9905de0115143bd49223.jpg" width="" height="400px" >
+    <br> 
+    <img src="https://i.pinimg.com/564x/80/5a/60/805a602b2012026134425330aa22dc94.jpg" width="" height="400px">
+    <img src="https://i.pinimg.com/564x/92/51/b7/9251b78b1df9f82b151781989b4dbdd2.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/c2/6b/e0/c26be0886ca411e9a05bb6ee92b75ebb.jpg" width="" height="400px" >
+    <br>
+    <hr>
+     <section id="estilo-gala">
+        <h2> Estilo Gala </h2>
+    <img src="https://i.pinimg.com/564x/cb/4b/30/cb4b307275da36ee88ac2e082ce5ed48.jpg"  width="" height="400px">
+    <img src="https://i.pinimg.com/564x/42/01/5e/42015e869645c2a2a74172b65b83be95.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/03/57/8c/03578c84385446ad87df6a91be158785.jpg" width="" height="400px" >
+    <br>
+    <img src="https://i.pinimg.com/564x/0e/63/42/0e63428949d798aba1f0c61959272994.jpg" width="" height="400px">
+    <img src="https://i.pinimg.com/564x/de/b0/94/deb094d4df611f5a582ba35c65f61447.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/78/28/7c/78287c433785a5c89532c1fa732c30ca.jpg" width="" height="400px" >
+    <br>
+    <img src="https://i.pinimg.com/564x/b3/5a/cd/b35acd1116908a19ad71cde1307bf398.jpg" width="" height="400px">
+    <img src="https://i.pinimg.com/564x/98/6e/8f/986e8fb4b309dff1d7b5a0128d747ce5.jpg" width="" height="400px" >
+    <img src="hhttps://i.pinimg.com/564x/76/9e/e1/769ee1eb8bea9a5b1c9779503fe9cabe.jpg" width="" height="400px" >
+    <br>
+    <hr>
+    <section id="estilo-fiesta-informal">
+        <h2> Estilo Fiesta Informal </h2>
+    <img src="https://i.pinimg.com/564x/31/66/7e/31667ebcec0ef2e4e85bc533ea7e7895.jpg"  width="" height="400px">
+    <img src="https://i.pinimg.com/736x/d1/3d/18/d13d180c413423d61b590934909cc112.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/19/b1/33/19b13331aa24a6efaed11ad79906b0e1.jpg" width="" height="400px" >
+    <br>
+    <img src="https://i.pinimg.com/564x/a1/cf/c4/a1cfc428b82e94460150d2e1923051a0.jpg"  width="" height="400px">
+    <img src="https://i.pinimg.com/564x/3b/66/58/3b6658049ef3ea8801355b8647e8057f.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/17/68/ea/1768ead7dbcd0cc4fbdc7e0aac907d78.jpg" width="" height="400px" >
+    <br>
+    <img src="https://i.pinimg.com/564x/af/07/68/af0768769ee3d4c745f0dbeb673520b5.jpg"  width="" height="400px">
+    <img src="https://i.pinimg.com/564x/8d/64/ff/8d64ffe2c289b68728f98c54118a7da1.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/5d/78/71/5d7871cda2508a0a93908021ff93f6ba.jpg" width="" height="400px" >
+    </div>
+    <hr>
+     <section id="accesorios">
+        <h2>Accesorios</h2>
+    <img src="https://i.pinimg.com/564x/b7/e1/40/b7e1406fc87d7c6e222b568a0026b60f.jpg"  width="" height="400px">
+    <img src="https://i.pinimg.com/564x/3f/77/27/3f77278606ec7f557ea37140597b1881.jpg" width="" height="400px" >
+    <img src="https://i.pinimg.com/564x/3e/39/0e/3e390e7a2f85f9bd61911a441a4d7298.jpg" width="" height="400px" >
+    </section>
+
+    <hr> 
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Contáctanos para obtener más información!</p>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 Mi Página Web</p>
+    </footer>
+</body>
+</html>

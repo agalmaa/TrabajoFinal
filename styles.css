@@ -1,0 +1,98 @@
+#inicio
+{ background-color: #F8DFF3;
+    color: 312, 93%, 2%;
+    text-align: center;
+    padding:0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFD1DC;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+.logotipo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+}
+
+.contenido {
+    /* Ajusta este padding para dejar espacio debajo del logotipo */
+    padding-top: 50px;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+img {
+cursor: pointer;
+}
+
+.imagen-barbie {
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #ff3385; /* Color de fondo rosa medio para la barra de navegación */
+    padding: 10px;
+    padding-top: 20px;
+}
+
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff66b2; /* Color de fondo para el menú desplegable */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco para los enlaces de navegación */
+    font-weight: bold;
+}
+
+footer {
+    background-color: #FFD1DC;;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
