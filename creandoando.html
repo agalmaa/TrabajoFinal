@@ -8,39 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script&family=Ephesis&family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Obtener el párrafo de "Preguntas Frecuentes"
-            var preguntasFrecuentesParagraph = document.getElementById("preguntas-frecuentes-paragraph");
-
-            // Ocultar el párrafo inicialmente
-            preguntasFrecuentesParagraph.style.display = "none";
-
-            // Obtener el enlace del menú "Preguntas Frecuentes"
-            var preguntasFrecuentesLink = document.getElementById("preguntas-frecuentes-link");
-
-            // Agregar un evento de clic al enlace del menú
-            preguntasFrecuentesLink.addEventListener("click", function (event) {
-                // Evitar que el enlace lleve a otra página
-                event.preventDefault();
-
-                // Mostrar u ocultar el párrafo al hacer clic en el enlace
-                if (preguntasFrecuentesParagraph.style.display === "none") {
-                    preguntasFrecuentesParagraph.style.display = "block";
-                } else {
-                    preguntasFrecuentesParagraph.style.display = "none";
-                }
-            });
-        });
-    </script>
-    </head>
+    
 <body>
       <header>
         <div class="logotipo">
-            <img src="https://i.pinimg.com/736x/86/d0/9f/86d09fe270c8fa6b7d8eabc38b64739e.jpg" width="160" height="160">
+            <img src="https://i.pinimg.com/736x/86/d0/9f/86d09fe270c8fa6b7d8eabc38b64739e.jpg" width="150" height="150">
         </div>
         <h1>Alquimia</h1>
-        <p>Descubre la última moda en tonalidades de rosa para todas las temporadas.</p>
+        <p> Somos una distinguida tienda en línea especializada en la venta de ropa de mujer. Con una trayectoria de una década a nivel mundial, nos hemos consolidado como líderes en ofrecer una exclusiva selección de prendas en una amplia gama de tonalidades de rosa. Nuestra dedicación a la moda femenina se refleja en cada prenda que ofrecemos, fusionando estilo y elegancia de manera única. </p>
+        <br> 
     </header>
     </Div>
     <div class="menu">
@@ -58,6 +34,7 @@
             </ul>
         </li>
         <li><a href="#accesorios">Accesorios</a></li>
+        <!-- Menú desplegable de talles -->
         <li class="dropdown">
         <a href="#">Talles</a>
         <ul class="dropdown-content">
@@ -66,11 +43,15 @@
         <li><a href="#talle-l">Talle L</a></li>
         </ul>
         </li>
-        <li class="dropdown">
+        <!-- Menú desplegable de Preguntas Frecuentes -->
+                <li class="dropdown">
                     <a href="#">Preguntas Frecuentes</a>
                     <ul class="dropdown-content">
-                        <li><a id="preguntas-frecuentes-link" href="#">Ver Preguntas Frecuentes</a></li>
+                        <li><a href="#pregunta1">Como comprar</a></li>
+                        <li><a href="#pregunta2">Medios de pago</a></li>
+                        <li><a href="#pregunta3">Tiempo de envio</a></li>
                     </ul>
+                </li>
         </li>
         <li><a href="#contacto">Contacto</a></li>
         <div class="carrito">
@@ -79,19 +60,8 @@
         </a>
         </div>
         </ul>
-        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
     </nav>
-        
-         <!-- Párrafo de Preguntas Frecuentes -->
-        <p id="preguntas-frecuentes-paragraph">
-            <!-- Contenido de Preguntas Frecuentes aquí -->
-            <strong>Pregunta 1:</strong> ¿Cómo realizo una compra?<br>
-            <strong>Pregunta 2:</strong> ¿Cuáles son las opciones de pago?<br>
-            <strong>Pregunta 3:</strong> ¿Cómo puedo realizar cambios o devoluciones?
-        </p>
-
- <div class="contenedor-de-imagenes" id="estilos">
-    <p class="barbie"></p>
+    <div class="contenedor-de-imagenes" id="estilos">
     <hr>
     <section id="estilo-ejecutiva">
         <h2> Estilo Ejecutiva </h2>
@@ -316,6 +286,22 @@
     <div class="precio-overlay">100 Euros</div>
     </div>
     </section>
+    <hr> 
+     <!-- Respuestas a las preguntas frecuentes -->
+     <div class="preguntasfrecuentes"> 
+    <div id="pregunta1">
+        <h2>¿Cómo puedo realizar una compra?</h2>
+        <p>Para realizar una compra, simplemente navega por nuestra tienda online, selecciona los productos que te interesen y agréalos al carrito de compras. Luego, sigue los pasos del proceso de pago, proporcionando la información necesaria y eligiendo la forma de envío que prefieras.</p>
+    </div>
+    <div id="pregunta2">
+        <h2>¿Qué medios de pago aceptan?</h2>
+        <p>Aceptamos una variedad de métodos de pago seguros, incluyendo tarjetas de crédito/débito (Visa, MasterCard, American Express), PayPal y otras opciones específicas según tu ubicación. Puedes ver todas las opciones durante el proceso de pago.</p>
+    </div>
+    <div id="pregunta3">
+        <h2>¿Cuánto tiempo tarda en llegar mi pedido?</h2>
+        <p>El tiempo de entrega puede variar según tu ubicación y la opción de envío seleccionada. Normalmente, los pedidos son procesados y enviados en un plazo de 1 a 3 días hábiles. Una vez enviado, el tiempo de entrega estimado se mostrará durante el proceso de compra y podrás realizar un seguimiento de tu pedido.</p>
+    </div>
+</div class>
     <hr> 
     <footer>
          <section id="contacto">

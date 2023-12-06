@@ -1,7 +1,7 @@
 /* Aca esta Inicio*/
 #inicio
 { background-color: #F8DFF3;
-    color: 312, 93%, 2%;
+    color: #FF1D02;
     text-align: center;
     padding:0;
     position: relative;
@@ -21,14 +21,14 @@ h1 {
 
 /* Aca esta el header, donde esta la imagen y descripcion de la tienda*/
 header {
-    background-color: #FFD1DC;;
+    background-color: #FFD1DC;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 1rem;
 }
 
 /* Aca esta el logotipo de la tienda*/
-logotipo {
+.logotipo {
     display: flex;
     position: absolute;
     margin: auto;
@@ -42,8 +42,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
+    background-color: #ebe6ea; 
+    }
+
 /* Aca estan las secciones, cajas donde dentro estan las imagenes*/
 section {
     margin: 20px;
@@ -173,7 +174,8 @@ nav a {
     margin-right: 30px; 
 }
 
-
+#preguntasfrecuentes
+    color: #273a2d;
 #copyright {
     background-color: #ff3385;
     color: #fff;
