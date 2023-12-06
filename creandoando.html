@@ -5,43 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Alquimia </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script&family=Ephesis&family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Obtener el párrafo de "Quienes somos"
-            var quienesSomosParagraph = document.getElementById("quienes-somos-paragraph");
+            // Obtener el párrafo de "Preguntas Frecuentes"
+            var preguntasFrecuentesParagraph = document.getElementById("preguntas-frecuentes-paragraph");
 
             // Ocultar el párrafo inicialmente
-            quienesSomosParagraph.style.display = "none";
+            preguntasFrecuentesParagraph.style.display = "none";
 
-            // Obtener el enlace del menú "Quienes somos"
-            var quienesSomosLink = document.getElementById("quienes-somos-link");
+            // Obtener el enlace del menú "Preguntas Frecuentes"
+            var preguntasFrecuentesLink = document.getElementById("preguntas-frecuentes-link");
 
             // Agregar un evento de clic al enlace del menú
-            quienesSomosLink.addEventListener("click", function (event) {
+            preguntasFrecuentesLink.addEventListener("click", function (event) {
                 // Evitar que el enlace lleve a otra página
                 event.preventDefault();
 
                 // Mostrar u ocultar el párrafo al hacer clic en el enlace
-                if (quienesSomosParagraph.style.display === "none") {
-                    quienesSomosParagraph.style.display = "block";
+                if (preguntasFrecuentesParagraph.style.display === "none") {
+                    preguntasFrecuentesParagraph.style.display = "block";
                 } else {
-                    quienesSomosParagraph.style.display = "none";
+                    preguntasFrecuentesParagraph.style.display = "none";
                 }
             });
         });
     </script>
+    </head>
 <body>
       <header>
         <div class="logotipo">
             <img src="https://i.pinimg.com/736x/86/d0/9f/86d09fe270c8fa6b7d8eabc38b64739e.jpg" width="160" height="160">
         </div>
         <h1>Alquimia</h1>
-        <p>Descubre la última moda de Barbie para todas las temporadas.</p>
+        <p>Descubre la última moda en tonalidades de rosa para todas las temporadas.</p>
     </header>
     </Div>
     <div class="menu">
     <!-- Menú de navegación -->
-<<nav>
+    <nav>
         <ul>
           <li><a href="#">Inicio</a></li>
           <li><a id="quienes-somos-link" href="#">Quienes somos</a></li>
@@ -54,13 +58,38 @@
             </ul>
         </li>
         <li><a href="#accesorios">Accesorios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li class="dropdown">
+        <a href="#">Talles</a>
+        <ul class="dropdown-content">
+        <li><a href="#talle-s">Talle S</a></li>
+        <li><a href="#talle-m">Talle M</a></li>
+        <li><a href="#talle-l">Talle L</a></li>
         </ul>
+        </li>
+        <li class="dropdown">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <ul class="dropdown-content">
+                        <li><a id="preguntas-frecuentes-link" href="#">Ver Preguntas Frecuentes</a></li>
+                    </ul>
+        </li>
+        <li><a href="#contacto">Contacto</a></li>
+        <div class="carrito">
+        <a href="https://wa.me/+5493436988129" target="_blank">
+        <img src="https://i.pinimg.com/564x/d3/44/8e/d3448ef3e081d59992c31fefab5135d6.jpg" alt="Logo de facebook" width="40" height="40">
+        </a>
+        </div>
+        </ul>
+        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
     </nav>
-        <p id="quienes-somos-paragraph">Alquimia es una distinguida tienda en línea especializada en la venta de ropa
-            de mujer. Con una trayectoria de una década a nivel mundial, nos hemos consolidado como líderes en ofrecer
-            una exclusiva selección de prendas en una amplia gama de tonalidades de rosa. Nuestra dedicación a la moda
-            femenina se refleja en cada prenda que ofrecemos, fusionando estilo y elegancia de manera única.</p> 
+        
+         <!-- Párrafo de Preguntas Frecuentes -->
+        <p id="preguntas-frecuentes-paragraph">
+            <!-- Contenido de Preguntas Frecuentes aquí -->
+            <strong>Pregunta 1:</strong> ¿Cómo realizo una compra?<br>
+            <strong>Pregunta 2:</strong> ¿Cuáles son las opciones de pago?<br>
+            <strong>Pregunta 3:</strong> ¿Cómo puedo realizar cambios o devoluciones?
+        </p>
+
  <div class="contenedor-de-imagenes" id="estilos">
     <p class="barbie"></p>
     <hr>
@@ -68,80 +97,251 @@
         <h2> Estilo Ejecutiva </h2>
     <h3> Temporada invierno </h3> 
     <div class="contenedor-imagen">
+        <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/5b/3a/d1/5b3ad1010bb4293b3ebb8e6dbfe6f66a.jpg" width="" height="400px" >
+     <div class="comprar-overlay">Comprar</div>
+     <div class="precio-overlay">100 Euros</div>
+      </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/ac/c7/c7/acc7c7ef9255b9d624e914aaeb3639d6.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+      </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/53/4e/29/534e294d2bd1e2ff3300efd34379fd24.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div> 
+      </div>
     <br>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/29/1c/76/291c76bff5d320115f46ef31ae68f710.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/9e/59/9d/9e599d01bfd4c7d54c21d71723e99117.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/92/57/24/925724e96637f568a0e9b52bc711f4bb.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
     <br>
     <hr>
     <h2> Verano </h2>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/ef/a8/48/efa84802c405a2731421b94ee777c5ea.jpg"  width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/f7/bd/ac/f7bdacb5ded4bfa312663623bb563db5.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/7e/91/c0/7e91c0d3c9c2db6c40ce6ba5e6aed834.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
     <br>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/0e/73/91/0e7391bbaf7e3b948c40b4bd56e55eb9.jpg"  width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/71/37/37/713737e5104690b50d068d60ca4113cc.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/13/0f/1d/130f1da9c869e97930b24ad9bb9f0d2a.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
     <br>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/c1/e2/54/c1e254addec8f2ac3239c4ca9626347f.jpg"  width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/4a/3d/87/4a3d8758a3c785834b402f83fa82a258.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/bc/04/67/bc046790687b9905de0115143bd49223.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
     <br> 
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/80/5a/60/805a602b2012026134425330aa22dc94.jpg" width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/92/51/b7/9251b78b1df9f82b151781989b4dbdd2.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/c2/6b/e0/c26be0886ca411e9a05bb6ee92b75ebb.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
     <br>
     <hr>
      <section id="estilo-gala">
         <h2> Estilo Gala </h2>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/cb/4b/30/cb4b307275da36ee88ac2e082ce5ed48.jpg"  width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/42/01/5e/42015e869645c2a2a74172b65b83be95.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/03/57/8c/03578c84385446ad87df6a91be158785.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
     <br>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/0e/63/42/0e63428949d798aba1f0c61959272994.jpg" width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/de/b0/94/deb094d4df611f5a582ba35c65f61447.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/78/28/7c/78287c433785a5c89532c1fa732c30ca.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
     <br>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/b3/5a/cd/b35acd1116908a19ad71cde1307bf398.jpg" width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/98/6e/8f/986e8fb4b309dff1d7b5a0128d747ce5.jpg" width="" height="400px" >
-    <img src="hhttps://i.pinimg.com/564x/76/9e/e1/769ee1eb8bea9a5b1c9779503fe9cabe.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
+    <img src="https://i.pinimg.com/736x/32/ec/be/32ecbecc47a7cde4a5cd9b9ec9455971.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
     <br>
     <hr>
     <section id="estilo-fiesta-informal">
         <h2> Estilo Fiesta Informal </h2>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/31/66/7e/31667ebcec0ef2e4e85bc533ea7e7895.jpg"  width="" height="400px">
-    <img src="https://i.pinimg.com/736x/d1/3d/18/d13d180c413423d61b590934909cc112.jpg" width="" height="400px" >
-    <img src="https://i.pinimg.com/564x/19/b1/33/19b13331aa24a6efaed11ad79906b0e1.jpg" width="" height="400px" >
-    <br>
-    <img src="https://i.pinimg.com/564x/a1/cf/c4/a1cfc428b82e94460150d2e1923051a0.jpg"  width="" height="400px">
-    <img src="https://i.pinimg.com/564x/3b/66/58/3b6658049ef3ea8801355b8647e8057f.jpg" width="" height="400px" >
-    <img src="https://i.pinimg.com/564x/17/68/ea/1768ead7dbcd0cc4fbdc7e0aac907d78.jpg" width="" height="400px" >
-    <br>
-    <img src="https://i.pinimg.com/564x/af/07/68/af0768769ee3d4c745f0dbeb673520b5.jpg"  width="" height="400px">
-    <img src="https://i.pinimg.com/564x/8d/64/ff/8d64ffe2c289b68728f98c54118a7da1.jpg" width="" height="400px" >
-    <img src="https://i.pinimg.com/564x/5d/78/71/5d7871cda2508a0a93908021ff93f6ba.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
     </div>
+    <div class="imagen-con-compra">
+    <img src="https://i.pinimg.com/736x/d1/3d/18/d13d180c413423d61b590934909cc112.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
+    <img src="https://i.pinimg.com/564x/19/b1/33/19b13331aa24a6efaed11ad79906b0e1.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <br>
+    <div class="imagen-con-compra">
+    <img src="https://i.pinimg.com/564x/a1/cf/c4/a1cfc428b82e94460150d2e1923051a0.jpg"  width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
+    <img src="https://i.pinimg.com/564x/3b/66/58/3b6658049ef3ea8801355b8647e8057f.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
+    <img src="https://i.pinimg.com/564x/17/68/ea/1768ead7dbcd0cc4fbdc7e0aac907d78.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <br>
+    <div class="imagen-con-compra">
+    <img src="https://i.pinimg.com/564x/af/07/68/af0768769ee3d4c745f0dbeb673520b5.jpg"  width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">    
+    <img src="https://i.pinimg.com/564x/8d/64/ff/8d64ffe2c289b68728f98c54118a7da1.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">  
+    <img src="https://i.pinimg.com/564x/5d/78/71/5d7871cda2508a0a93908021ff93f6ba.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+     </div>
     <hr>
      <section id="accesorios">
         <h2>Accesorios</h2>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/b7/e1/40/b7e1406fc87d7c6e222b568a0026b60f.jpg"  width="" height="400px">
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/3f/77/27/3f77278606ec7f557ea37140597b1881.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
+    <div class="imagen-con-compra">
     <img src="https://i.pinimg.com/564x/3e/39/0e/3e390e7a2f85f9bd61911a441a4d7298.jpg" width="" height="400px" >
+    <div class="comprar-overlay">Comprar</div>
+    <div class="precio-overlay">100 Euros</div>
+    </div>
     </section>
-
     <hr> 
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¡Contáctanos para obtener más información!</p>
-    </section>
-    
-
     <footer>
-        <p>&copy; 2023 Mi Página Web</p>
+         <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Contáctanos para obtener más información!
+        <div class="whatsapp">
+        <a href="https://wa.me/+5493436988129" target="_blank">
+        <img src="https://i.pinimg.com/564x/33/5f/64/335f64d8af655792123339f8b4ab60c3.jpg" alt="Logo de WhatsApp" width="40" height="40">
+         </a>
+        </div>
+        <div class="facebook">
+        <a href="https://www.facebook.com/ecleticcdesign" target="_blank">
+        <img src="https://i.pinimg.com/564x/7b/26/d6/7b26d63f86719e1b9f48f6ebc5b36757.jpg" alt="Logo de facebook" width="40" height="40">
+        </a>
+        </div>
+        <div class="instagram">
+        <a href="https://www.instagram.com/ecleticcdesign/" target="_blank">
+        <img src="https://i.pinimg.com/564x/91/76/12/917612b7eab217b8f472b69921a52710.jpg" alt="Logo de instagram" width="40" height="40">
+        </a>
+        </div>
+        </p>
+        </section>
+        <section id= "copyright">
+        <p>&copy; Diseñada por Jesica Pereyra copyright 2023 </p>
+        </section>
+       
     </footer>
 </body>
 </html>

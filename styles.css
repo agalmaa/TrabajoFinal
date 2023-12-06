@@ -1,3 +1,4 @@
+/* Aca esta Inicio*/
 #inicio
 { background-color: #F8DFF3;
     color: 312, 93%, 2%;
@@ -9,33 +10,41 @@
 
 }
 
-
-
-body {
-    margin: 0;
-    padding: 0;
+/* Aca esta el H1*/
+h1 {
+     font-family: 'Bungee Spice', sans-serif;
+     font-family: 'Dancing Script', cursive;
+     font-family: 'Ephesis', cursive;
+     color: deeppink;
+     font-size: 80px;
 }
 
+/* Aca esta el header, donde esta la imagen y descripcion de la tienda*/
 header {
-    background-color: #FFD1DC;
+    background-color: #FFD1DC;;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: relative;
 }
 
-.logotipo {
+/* Aca esta el logotipo de la tienda*/
+logotipo {
+    display: flex;
     position: absolute;
-    top: 0;
-    left: 0;
-    padding: 1em;
+    margin: auto;
+    top: 250;
+    left: 250;
+    padding: 20px;
 }
 
-.contenido {
-    /* Ajusta este padding para dejar espacio debajo del logotipo */
-    padding-top: 50px;
+/* Aca esta todo lo que entra en el body osea la tienda entera*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-
+/* Aca estan las secciones, cajas donde dentro estan las imagenes*/
 section {
     margin: 20px;
     text-align: center;
@@ -49,6 +58,7 @@ cursor: pointer;
     margin: 0 auto;
 }
 
+/* Aca esta el menu*/
 nav {
     background-color: #ff3385; /* Color de fondo rosa medio para la barra de navegación */
     padding: 10px;
@@ -56,6 +66,7 @@ nav {
 }
 
 
+/* Aca esta el menu desplegable*/
 nav .dropdown-content {
     display: none;
     position: absolute;
@@ -87,11 +98,87 @@ nav a {
     font-weight: bold;
 }
 
-footer {
+/* Estilo del contenedor de la imagen con la opción de compra */
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    margin: 10px; /* Ajusta el margen según sea necesario */
+}
+
+/* Estilo del contenedor de imagen con el texto "Comprar" superpuesto */
+.imagen-con-compra {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo del texto "Comprar" superpuesto */
+.comprar-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Blanco medio transparente */
+    padding: 10px;
+    font-size: 18px;
+    color: #000; /* Color del texto */
+    display: none;
+}
+
+/* Mostrar el texto "Comprar" al pasar el ratón sobre la imagen */
+.imagen-con-compra:hover .comprar-overlay {
+    display: block;
+}
+
+/* Estilo del texto "Precio" superpuesto */
+.precio-overlay {
+    position: absolute;
+    top: 60%; /* Ajusta la posición vertical según sea necesario */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Blanco medio transparente */
+    padding: 5px;
+    font-size: 14px;
+    color: #000; /* Color del texto */
+    display: none;
+}
+
+/* Mostrar el texto "Precio" al pasar el ratón sobre la imagen */
+.imagen-con-compra:hover .precio-overlay {
+    display: block;
+}
+
+#contacto  {
     background-color: #FFD1DC;;
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;      
+
+}
+
+.whatsapp {
+    display: inline-block;
+    margin-right: 30px; 
+}
+
+.facebook {
+    display: inline-block;
+    margin-right: 30px; 
+}
+
+.instagram {
+    display: inline-block;
+    margin-right: 30px; 
+}
+
+
+#copyright {
+    background-color: #ff3385;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
     position: relative;
     bottom: 0;
     width: 100%;
