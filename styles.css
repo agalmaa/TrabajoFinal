@@ -21,7 +21,7 @@ h1 {
 
 /* Aca esta el header, donde esta la imagen y descripcion de la tienda*/
 header {
-    background-color: #FFD1DC;
+    background-color: #ffa8d9;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -149,7 +149,7 @@ nav a {
 }
 
 #contacto  {
-    background-color: #FFD1DC;;
+    background-color: #ffa8d9;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -175,7 +175,10 @@ nav a {
 }
 
 #preguntasfrecuentes
+    {
     color: #273a2d;
+    }
+
 #copyright {
     background-color: #ff3385;
     color: #fff;
