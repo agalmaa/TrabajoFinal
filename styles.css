@@ -30,11 +30,12 @@ header {
 /* Aca esta el logotipo de la tienda*/
 .logotipo {
     display: flex;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     margin: auto;
     top: 250;
     left: 250;
-    padding: 20px;
 }
 
 /* Aca esta todo lo que entra en el body osea la tienda entera*/
@@ -47,7 +48,6 @@ body {
 
 /* Aca estan las secciones, cajas donde dentro estan las imagenes*/
 section {
-    margin: 20px;
     text-align: center;
 }
 
@@ -60,43 +60,123 @@ cursor: pointer;
 }
 
 /* Aca esta el menu*/
-nav {
-    background-color: #ff3385; /* Color de fondo rosa medio para la barra de navegación */
+/* Estilos generales para pantallas grandes y medianas */
+@media (min-width: 769px) {
+        nav {
+    background-color: #ff3385;
     padding: 10px;
     padding-top: 20px;
+             }
+      nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+              }
+     nav li {
+    margin: 0 15px;
+              }
+       nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+             }
+      body {
+        font-size: 16px; /* Tamaño de fuente para pantallas grandes */
+        margin: 20px; /* Márgenes para pantallas grandes */
+        padding: 10px; /* Padding para pantallas grandes */
+            }
+    #contacto {
+        font-size: 16px; /* Tamaño de fuente para pantallas grandes */
+    }
+
+    .whatsapp,
+    .facebook,
+    .instagram {
+        margin-right: 30px; /* Márgenes para iconos en pantallas grandes */
+    }
 }
 
+/* Estilos específicos para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+     
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    } 
+    nav li {
+        margin: 10px 0;
+    }
+     body {
+        font-size: 14px; /* Tamaño de fuente para pantallas medianas */
+        margin: 15px; /* Márgenes para pantallas medianas */
+        padding: 8px; /* Padding para pantallas medianas */
+    }
+    #contacto {
+        font-size: 14px; /* Tamaño de fuente para pantallas medianas */
+    }
 
-/* Aca esta el menu desplegable*/
+    .whatsapp,
+    .facebook,
+    .instagram {
+        margin-right: 20px; /* Ajuste de márgenes para iconos en pantallas medianas */
+    }
+}
+
+/* Estilos específicos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    nav {
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+    body {
+        font-size: 12px; /* Tamaño de fuente para pantallas pequeñas */
+        margin: 10px; /* Márgenes para pantallas pequeñas */
+        padding: 5px; /* Padding para pantallas pequeñas */
+    }
+    #contacto {
+        font-size: 12px; /* Tamaño de fuente para pantallas pequeñas */
+    }
+
+    .whatsapp,
+    .facebook,
+    .instagram {
+        margin-right: 10px; /* Ajuste de márgenes para iconos en pantallas pequeñas */
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: static;
+        background-color: #ff66b2;
+        box-shadow: none;
+    }
+}
+
+/* Estilos del menú desplegable */
 nav .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #ff66b2; /* Color de fondo para el menú desplegable */
+    position: relative;
+    background-color: #ff66b2;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 nav .dropdown:hover .dropdown-content {
     display: block;
-}
-
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff; /* Color de texto blanco para los enlaces de navegación */
-    font-weight: bold;
 }
 
 /* Estilo del contenedor de la imagen con la opción de compra */
