@@ -36,6 +36,16 @@ header {
     left: 250;
 }
 
+/* Aca esta el efecto en el logo*/ 
+.logotipo {
+    transition: transform 0.2s; /* animación */
+}
+
+.logotipo :hover {
+    transform: scale(1.7);
+    z-index: 2;
+}
+
 /* Aca esta todo lo que entra en el body osea la tienda entera*/
 body {
     font-family: henny+penny;
