@@ -44,7 +44,7 @@ body {
     background-color: #ebe6ea; 
     }
 
-/* Aca esta el efecto en las imagenes (deberia funcionar pero a mi no me funciona*/ 
+/* Aca esta el efecto en las imagenes*/ 
 .imagen-con-compra {
     transition: transform 0.2s; /* animación */
 }
