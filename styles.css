@@ -12,8 +12,6 @@
 
 /* Aca esta el H1*/
 h1 {
-     font-family: 'Bungee Spice', sans-serif;
-     font-family: 'Dancing Script', cursive;
      font-family: 'Ephesis', cursive;
      color: deeppink;
      font-size: 80px;
@@ -40,11 +38,21 @@ header {
 
 /* Aca esta todo lo que entra en el body osea la tienda entera*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: henny+penny;
     margin: 0;
     padding: 0;
     background-color: #ebe6ea; 
     }
+
+/* Aca esta el efecto en las imagenes (deberia funcionar pero a mi no me funciona*/ 
+.imagen-con-compra {
+    transition: transform 0.2s; /* animación */
+}
+
+.imagen-con-compra:hover {
+    transform: scale(1.5);
+    z-index: 2;
+}
 
 /* Aca estan las secciones, cajas donde dentro estan las imagenes*/
 section {
@@ -131,39 +139,42 @@ cursor: pointer;
 @media (max-width: 576px) {
     nav {
         padding: 10px;
-    }
+          font-size: 12px;
+        }
     nav ul {
         flex-direction: column;
         align-items: center;
-    }
+          font-size: 12px;
+           }
 
     nav li {
         margin: 10px 0;
-    }
+        
+           }
     body {
         font-size: 12px; /* Tamaño de fuente para pantallas pequeñas */
         margin: 10px; /* Márgenes para pantallas pequeñas */
         padding: 5px; /* Padding para pantallas pequeñas */
-    }
+         }
     #contacto {
         font-size: 12px; /* Tamaño de fuente para pantallas pequeñas */
-    }
+              }
 
     .whatsapp,
     .facebook,
     .instagram {
         margin-right: 10px; /* Ajuste de márgenes para iconos en pantallas pequeñas */
-    }
+                }
     .dropdown:hover .dropdown-content {
         display: none;
-    }
+                                      }
 
     .dropdown-content {
         display: none;
         position: static;
         background-color: #ff66b2;
         box-shadow: none;
-    }
+                      }
 }
 
 /* Estilos del menú desplegable */
@@ -173,24 +184,24 @@ nav .dropdown-content {
     background-color: #ff66b2;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
-}
+                      }
 
 nav .dropdown:hover .dropdown-content {
     display: block;
-}
+                                      }
 
 /* Estilo del contenedor de la imagen con la opción de compra */
 .contenedor-imagen {
     position: relative;
     display: inline-block;
     margin: 10px; /* Ajusta el margen según sea necesario */
-}
+                    }
 
 /* Estilo del contenedor de imagen con el texto "Comprar" superpuesto */
 .imagen-con-compra {
     position: relative;
     display: inline-block;
-}
+                   }
 
 /* Estilo del texto "Comprar" superpuesto */
 .comprar-overlay {
@@ -203,12 +214,12 @@ nav .dropdown:hover .dropdown-content {
     font-size: 18px;
     color: #000; /* Color del texto */
     display: none;
-}
+                 }
 
 /* Mostrar el texto "Comprar" al pasar el ratón sobre la imagen */
 .imagen-con-compra:hover .comprar-overlay {
     display: block;
-}
+                                          }
 
 /* Estilo del texto "Precio" superpuesto */
 .precio-overlay {
@@ -221,12 +232,12 @@ nav .dropdown:hover .dropdown-content {
     font-size: 14px;
     color: #000; /* Color del texto */
     display: none;
-}
+                 }
 
 /* Mostrar el texto "Precio" al pasar el ratón sobre la imagen */
 .imagen-con-compra:hover .precio-overlay {
     display: block;
-}
+                                         }
 
 #contacto  {
     background-color: #ffa8d9;
@@ -237,26 +248,27 @@ nav .dropdown:hover .dropdown-content {
     bottom: 0;
     width: 100%;      
 
-}
+           }
 
 .whatsapp {
     display: inline-block;
     margin-right: 30px; 
-}
+           }
 
 .facebook {
     display: inline-block;
     margin-right: 30px; 
-}
+          }
 
 .instagram {
     display: inline-block;
     margin-right: 30px; 
-}
+            }
 
-#preguntasfrecuentes
+.preguntasfrecuentes
     {
     color: #273a2d;
+    text-align: center;
     }
 
 #copyright {
@@ -267,4 +279,4 @@ nav .dropdown:hover .dropdown-content {
     position: relative;
     bottom: 0;
     width: 100%;
-}
+            }
