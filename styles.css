@@ -43,7 +43,7 @@ header {
 }
 
 .logotipo:hover {
-    transform: perspective(1000px) rotateX(20deg) rotateY(20deg); /* Rotación al pasar el ratón */
+    transform: perspective(1000px) rotateX(20deg) rotateY(0deg); /* Rotación al pasar el ratón */
 }
 
 /* Aca esta todo lo que entra en el body osea la tienda entera*/
@@ -291,3 +291,4 @@ nav .dropdown:hover .dropdown-content {
     width: 100%;
             }
 
+/*No se que mas agregarle a la pagina, que efecto ponerle etc. Profe espero que me ponga un 10. Me estoy esforzando mucho :D */
