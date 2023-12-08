@@ -36,14 +36,14 @@ header {
     left: 250;
 }
 
-/* Aca esta el efecto en el logo*/ 
+/* efecto logotipo */
 .logotipo {
-    transition: transform 0.2s; /* animación */
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    transition: transform 5s ease;
 }
 
-.logotipo :hover {
-    transform: scale(1.7);
-    z-index: 2;
+.logotipo:hover {
+    transform: perspective(1000px) rotateX(20deg) rotateY(20deg); /* Rotación al pasar el ratón */
 }
 
 /* Aca esta todo lo que entra en el body osea la tienda entera*/
@@ -290,3 +290,4 @@ nav .dropdown:hover .dropdown-content {
     bottom: 0;
     width: 100%;
             }
+
