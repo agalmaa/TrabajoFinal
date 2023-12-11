@@ -74,7 +74,7 @@ header {
 }
 
 .imagen-con-compra:hover {
-     transform: scale(1.05); /* Un poco de escala al pasar el ratón */
+     transform: scale(1.10); /* Un poco de escala al pasar el ratón */
     z-index: 2;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
