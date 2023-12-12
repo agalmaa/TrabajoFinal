@@ -83,7 +83,7 @@ header {
     width: 100%; /* La imagen ocupa el 100% del contenedor */
     height: auto; /* Altura automática para mantener la proporción */
 }
-}
+
 
 /* Estilo del texto "Comprar" superpuesto */
 .comprar-overlay {
@@ -105,10 +105,10 @@ header {
 
 /* Mostrar el texto "Comprar" al pasar el ratón sobre la imagen */
 .imagen-con-compra:hover .comprar-overlay {
-    /*display: block;*/
+    display: block;
     opacity: 1; /* Hacer visible al pasar el ratón */
     pointer-events: auto; /* Habilitar clics en el elemento visible */
-    /*background-color: #e62e75;*/
+    background-color: #e62e75;
 }
 
 /* Estilo del texto "Precio" superpuesto */
@@ -223,6 +223,24 @@ nav a {
         position: static;
         background-color: #ff66b2;
         box-shadow: none;
+    }
+}
+
+/* Estilos responsivos para pantallas grandes (mayores de 1001px) */
+@media (min-width: 1001px) {
+     body {
+        font-size: 20px; /* Aca aumenté el tamaño de fuente */
+    }
+
+    header {
+        padding: 2rem; /* Ajusté el padding del encabezado */
+    }
+   
+
+    .whatsapp,
+    .facebook,
+    .instagram {
+        margin-right: 20px;
     }
 }
 
