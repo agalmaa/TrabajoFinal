@@ -34,6 +34,7 @@ h1 {
     transition: color 0.5s ease; /* Transición para cambios en el color del título */
 }
 
+
 /* Estilos para el encabezado */
 header {
     background-color: #ffa8d9;
@@ -52,13 +53,8 @@ header {
     margin: auto;
     top: 250;
     left: 250;
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-    transition: transform 5s ease;
 }
 
-.logotipo:hover {
-    transform: perspective(1000px) rotateX(20deg) rotateY(0deg);
-}
 
 /* Estilos para las imágenes con opción de compra */
 .imagen-con-compra {
@@ -75,8 +71,8 @@ header {
 
 .imagen-con-compra:hover {
      transform: scale(1.10); /* Un poco de escala al pasar el ratón */
-    z-index: 2;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+     z-index: 2;
+     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 .contenedor-imagen {
@@ -87,7 +83,7 @@ header {
 
 /* Estilo del texto "Comprar" superpuesto */
 .comprar-overlay {
-   position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -245,12 +241,17 @@ nav a {
 }
 
 /* Estilos del menú desplegable */
+nav ul{
+    height: : 40px;
+      }
+
 nav .dropdown-content {
     display: none;
-    position: relative;
+    position: absolute; /* Cambiado a 'absolute' para que no afecte el flujo de los demás elementos */
     background-color: #ff66b2;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
+    top: 40px;
 }
 
 nav .dropdown:hover .dropdown-content {
